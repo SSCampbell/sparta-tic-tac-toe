@@ -5,6 +5,12 @@ $(document).ready(function() {
 
 console.log(player1Turn)
 
+  $("#reset").click(function(){
+
+    $("td").removeClass("X").html(" ")
+    $("td").removeClass("O").html(" ")
+  });
+
   $("td").click(function(){
   if (player1Turn == true)
   {
